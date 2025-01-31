@@ -373,3 +373,79 @@ padding: 10px;
     margin-top: 88px;
     margin-bottom: 60px;
 }
+
+/* footer */
+/* Footer Base Styling */
+.footer {
+    background: #0099ff; /* Blue Background */
+    padding: 40px 20px;
+    color: white;
+}
+
+/* Grid Layout */
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* 3 Sections */
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Left Section (Kids Education Info) */
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-info .logo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 141px;
+    top: 2695px;
+    bottom: -2695px;
+}
+
+.footer-info h2 {
+    font-size: 1.8rem;
+    margin: 10px 60px;
+    margin-bottom: 35px;
+}
+
+.footer-info p {
+    width: 399.02px;
+}
+
+/* Middle Section (Navigation Links) */
+.footer-links h3,
+.footer-social h3 {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 20px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Right Section (Social Icons) */
+.footer-social .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social .social-icons a img {
+    width: 30px;
+    height: 30px;
+}
