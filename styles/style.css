@@ -6,6 +6,9 @@
     
 }
 
+.banner-img {
+    width: 100%;
+}
 .quicksand-font {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
@@ -51,7 +54,19 @@ nav {
    
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
 
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+}
 
 .navbar-brand {
     align-items: center;
@@ -98,6 +113,8 @@ nav {
     margin-left: 0px;
 }
 
+
+
 /* banner styles */
 .banner {
     max-width: 1158px;
@@ -130,6 +147,17 @@ margin: auto 50px auto 0px;
     border: 0px;
 }
 
+.title {
+color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 46px;
+font-weight: 700;
+line-height: 57.5px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 20px;
+}
+
 /* curriculum style */
 
 .curriculum {
@@ -137,14 +165,6 @@ margin: auto 50px auto 0px;
     background: url('/assets/bg.png');
 }
 
-.title {
-color: rgb(0, 0, 0);
-font-family: Quicksand;
-font-size: 2.8rem;
-font-weight: 700;
-text-align: center;
-padding: 60px 0px 60px 0px; 
-}
 
 .Curriculum-card {
     max-width: 1160px;
@@ -360,6 +380,10 @@ padding: 10px;
 
 }
 
+.grid-item-disply {
+    display: none;
+}
+
 .view-all {
     position: static;
     width: 197px;
@@ -374,16 +398,23 @@ padding: 10px;
     margin-bottom: 60px;
 }
 
+.story-img {
+    max-width: 100%;
+}
+
 /* footer */
 /* Footer Base Styling */
 .footer {
+    max-width: 1440px;
+    max-height: 520px;
     background: #0099ff; /* Blue Background */
-    padding: 40px 20px;
+    padding: 123px 228px 174px 140px;
     color: white;
 }
 
 /* Grid Layout */
 .footer-container {
+    position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr; /* 3 Sections */
     gap: 30px;
@@ -399,22 +430,22 @@ padding: 10px;
 }
 
 .footer-info .logo {
-    position: absolute;
     width: 60px;
     height: 60px;
-    left: 141px;
-    top: 2695px;
-    bottom: -2695px;
+    margin-left: 0px;
+    margin-right: opx;
 }
 
 .footer-info h2 {
+    position: absolute;
     font-size: 1.8rem;
-    margin: 10px 60px;
-    margin-bottom: 35px;
+    margin-left: 62px;
+    margin-bottom: 20px;
 }
 
 .footer-info p {
-    width: 399.02px;
+    margin-top: 30px;
+    text-align: left;
 }
 
 /* Middle Section (Navigation Links) */
@@ -449,3 +480,114 @@ padding: 10px;
     width: 30px;
     height: 30px;
 }
+
+/* media quare */
+
+@media screen and (max-width : 576px){
+     .nav-links , .nav-link , .btn-primary  , .arow , .large{
+        display: none;
+    }
+
+    .navber {
+        border-bottom: 2px solid orange;
+    }
+
+    .hamburger {
+        display: flex; 
+        margin-right: 16px;
+        
+
+    }
+
+    .banner-title {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .menu-icon {
+        display: block;
+        margin-right: 0px;
+    }
+ 
+    .navbar-brand span {
+        display: none;          /* Hides text on small screens */
+    }
+
+    .banner .display-flex {
+        justify-content: center;
+        align-items: center;
+        margin: 20px 10px;
+        flex-direction: column-reverse;
+        }
+    .banner-top {
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        align-items: center;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        font-weight: medium;
+    }
+
+    .title {
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 30px 0px
+    }
+
+    .curriculum {
+     margin: 0px auto;
+    }
+    .Curriculum-card  {
+        display: grid;
+        grid-template-columns: repeat( 1, 1fr);
+        gap : 12px;
+        margin-top: 10px;
+        
+    }
+    
+    .Our-stories {
+        background-size: contain; /* Adjusts for smaller screens */
+        padding: 20px 10px;
+        
+    }
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    .grid-item {
+        width: 100%;  /* Ensures items take full space within the grid */
+        height: auto;  /* Adjusts height automatically */
+    }
+    .date {
+        position: absolute;
+        left: 10px;
+        top: 80px;
+        width: 106px;
+        border-radius: 28px;
+        font-size: 0.7rem;
+        font-weight: medium;
+        
+    }
+
+    .grid-item-disply {
+      display: block;
+    }
+.footer {
+    padding: 65px 21px;
+}
+
+    .footer-container {
+        grid-template-columns: 1fr;
+      }
+
+.footer-links {
+margin-left: 0px;
+}
+
+.footer-social {
+    margin-left: 0px;
+}
+
+ }
